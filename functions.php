@@ -1,14 +1,14 @@
 <?php
 
-$dbhost = 'localhost';
-$dbuser = 'id4504169_sedaerrt';
-$dbpass = 'megapro2005';
-$dbname = 'id4504169_sedaer';
-
 // $dbhost = 'localhost';
-// $dbuser = 'root';
-// $dbpass = '';
-// $dbname = 'sedaer';
+// $dbuser = 'id4504169_sedaerrt';
+// $dbpass = 'megapro2005';
+// $dbname = 'id4504169_sedaer';
+
+$dbhost = 'localhost';
+$dbuser = 'root';
+$dbpass = '';
+$dbname = 'sedaer';
 
 $conn = new mysqli($dbhost,$dbuser,$dbpass,$dbname);
 if ($conn->connect_error) {

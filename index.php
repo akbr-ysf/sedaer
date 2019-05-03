@@ -1,3 +1,10 @@
+<?php
+  require 'functions.php';
+
+  $artikel = query("SELECT * FROM artikel ORDER BY tanggal ASC LIMIT 5") ;
+
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -229,7 +236,28 @@
         </div>
         <div class="col-lg-6">
           <h1 class="text-center">Artikel</h1>
-
+            <?php foreach ($artikel as $row) : ?>
+              <!-- <table class="table table-sm">
+                <tbody>
+                  <tr>
+                    <td>
+                      <?= $row["judul"]; ?>
+                    </td>
+                    <td>
+                      <a href="detail.php?id=<?= $row["id"];?>" class="btn btn-primary">Detail</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table> -->
+              <ul>
+                <li class="text-white">
+                  <?= $row["judul"]  ?>
+                  <a href="detail.php?id=<?= $row["id"];?>" class="badge badge-warning">Detail</a> 
+                </li>
+                <!-- <li><a href="detail.php?id=<?= $row["id"];?>" class="btn btn-primary btn-sm">Detail</a></li> -->
+              </ul>
+              <!-- <a href="" style="display: block;"><?= $row['judul'] ?></a> -->
+            <?php endforeach; ?>
         </div>
       </div>
     </div>

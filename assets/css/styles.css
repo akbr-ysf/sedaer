@@ -1,0 +1,178 @@
+body {
+          font-family: 'Sniglet', cursive;
+          height: 100%;
+          width: 100%;
+}
+
+/* NAVBAR */
+.navbar {
+          position: fixed;
+          z-index: 2;
+          background-color: white;
+}
+
+/* CAROUSEL */
+.carousel {
+          margin-top: 50px;
+          position: relative;
+          z-index: 1;
+}
+
+.carousel .carousel-caption {
+          margin-bottom: 20px;
+}
+
+.carousel-caption p {
+          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+          font-size: 19px;
+}
+
+/* About */
+section.bg-success.about {
+          height: 300;
+          background-color: #00602C !important;
+          padding: 5rem 0;
+}
+
+section h2 {
+          font-size: 24px;
+          font-weight: 500;
+          text-transform: uppercase;
+          margin-bottom: 25px;
+          text-align: center;
+}
+
+section h2::after {
+          content: '';
+          display: block;
+          border-bottom: 3px solid #E37544;
+          width: 40%;
+          margin: auto;
+}
+
+section p {
+          text-align: justify;
+}
+
+section h2,
+p {
+          color: white;
+}
+
+/* UTILITY */
+.tombol {
+          text-transform: uppercase;
+          border-radius: 40px;
+          padding: 0.7rem 1rem;
+          font-size: .65rem;
+          font-weight: 500;
+          border: none;
+          border-radius: 10rem;
+          background-color: #E37544;
+}
+
+.tombol:hover {
+          color: #fff;
+          background-color: #E37544;
+          border-color: #E37544;
+}
+
+.tombol:active {
+          color: #fff;
+          background-color: #E37544;
+          border-color: #E37544;
+}
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) {
+
+          /* Navbar */
+          .navbar {
+                    position: fixed;
+                    z-index: 2;
+                    background-color: transparent;
+          }
+
+          nav.shrink {
+                    background-color: #00602C;
+                    height: 60px;
+                    padding: 20px;
+          }
+
+          .navbar-brand,
+          .nav-link {
+                    color: white !important;
+                    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+          }
+
+          .navbar-brand {
+                    font-size: 30px;
+                    text-transform: uppercase;
+                    font-weight: 500;
+          }
+
+          .nav-link {
+                    font-size: 18px;
+                    margin-right: 20px;
+          }
+
+          .nav-link:hover::after {
+                    content: '';
+                    display: block;
+                    border-bottom: 3px solid #E37544;
+                    width: 50%;
+                    margin: auto;
+                    padding-bottom: 5px;
+                    margin-bottom: -8px;
+          }
+
+          /* Carousel */
+          .carousel {
+                    margin-top: 0px;
+          }
+
+          .carousel-caption p {
+                    margin-bottom: 50px;
+                    font-size: 35px;
+          }
+
+          /* About */
+          section.bg-success.about {
+                    height: 500px;
+                    background-color: #00602C !important;
+                    padding: 6rem 0;
+          }
+
+          section h2 {
+                    font-size: 50px;
+                    padding-bottom: 15px;
+          }
+
+          section h2::after {
+                    content: '';
+                    display: block;
+                    border-bottom: 3px solid #E37544;
+                    width: 50%;
+                    margin: auto;
+          }
+
+          section p {
+                    font-size: 22px;
+          }
+
+          section .tombol {
+                    text-align: center;
+          }
+
+          /* Tombol */
+          .tombol {
+                    text-transform: uppercase;
+                    border-radius: 40px;
+                    padding: 1.25rem 2.25rem;
+                    font-size: .85rem;
+                    font-weight: 700;
+                    border: none;
+                    border-radius: 10rem;
+                    margin-bottom: 80px;
+          }
+}
