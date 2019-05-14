@@ -1,5 +1,5 @@
 <?php
-  require 'functions.php';
+  include 'functions.php';
 
   $artikel = query("SELECT * FROM artikel ORDER BY tanggal ASC LIMIT 5") ;
 
