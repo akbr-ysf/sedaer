@@ -1,9 +1,9 @@
-<?php
+<!-- <?php
   include 'functions.php';
 
   $artikel = query("SELECT * FROM artikel ORDER BY tanggal ASC LIMIT 5") ;
 
-?>
+?> -->
 
 <!doctype html>
 <html lang="en">
